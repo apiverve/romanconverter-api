@@ -15,8 +15,7 @@ const api = new romanconverterAPI({
 
 // Example query
 var query = {
-  number: 2024,
-  roman: "MMXXIV"
+  number: 2024
 };
 
 // Make the API request using callback
