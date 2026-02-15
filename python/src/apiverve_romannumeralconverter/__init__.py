@@ -1,1 +1,3 @@
-from .apiClient import RomanconverterAPIClient
+from .apiClient import RomanconverterAPIClient, RomanconverterAPIClientError
+
+__all__ = ['RomanconverterAPIClient', 'RomanconverterAPIClientError']
