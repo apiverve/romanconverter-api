@@ -222,8 +222,9 @@ from apiverve_romannumeralconverter.apiClient import RomanconverterAPIClient
 
 api = RomanconverterAPIClient("[YOUR_API_KEY]")
 
+query = { "number": 2024 }
+
 try:
-    query = { "number": 2024 }
     result = api.execute(query)
     print(result)
 finally:
