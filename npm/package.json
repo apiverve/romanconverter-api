@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/romanconverter",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Roman Numeral Converter is a bidirectional tool for converting between Arabic numbers (1-3999) and Roman numerals. It provides detailed breakdowns of the conversion process.",
   "main": "index.js",
   "types": "index.d.ts",
