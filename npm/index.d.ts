@@ -4,24 +4,36 @@ declare module '@apiverve/romanconverter' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface romanconverterResponse {
     status: string;
     error: string | null;
     data: RomanNumeralConverterData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface RomanNumeralConverterData {
-      number:    number;
-      roman:     string;
+      number:    number | null;
+      roman:     null | string;
       breakdown: Breakdown;
   }
   
   interface Breakdown {
-      m:  number;
-      x:  number;
-      iv: number;
+      m:  number | null;
+      x:  number | null;
+      iv: number | null;
   }
 
   export default class romanconverterWrapper {
