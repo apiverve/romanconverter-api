@@ -25,12 +25,15 @@ namespace APIVerve.API.RomanNumeralConverter
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("number")]
-        public long Number { get; set; }
+        public long? Number { get; set; }
 
         [JsonProperty("roman")]
         public string Roman { get; set; }
@@ -42,12 +45,24 @@ namespace APIVerve.API.RomanNumeralConverter
     public partial class Breakdown
     {
         [JsonProperty("M")]
-        public long M { get; set; }
+        public long? M { get; set; }
 
         [JsonProperty("X")]
-        public long X { get; set; }
+        public long? X { get; set; }
 
         [JsonProperty("IV")]
-        public long Iv { get; set; }
+        public long? Iv { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
