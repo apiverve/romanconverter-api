@@ -14,6 +14,6 @@ namespace APIVerve.API.RomanNumeralConverter
         /// The number to convert to Roman numerals
         /// </summary>
         [JsonProperty("number")]
-        public string Number { get; set; }
+        public int Number { get; set; }
     }
 }
