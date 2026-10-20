@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/romanconverter:
     get:
-      summary: Number to Roman
+      summary: Roman Numeral Converter
       description: Convert a number to Roman numerals
       operationId: romanconverter
       parameters:
