@@ -4,6 +4,6 @@ require_relative "apiverve_romanconverter/client"
 
 module APIVerve
   module Romanconverter
-    VERSION = "1.2.2"
+    VERSION = "1.2.3"
   end
 end
