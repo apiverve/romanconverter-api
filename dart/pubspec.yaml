@@ -1,0 +1,16 @@
+name: apiverve_romanconverter
+description: "Roman Numeral Converter is a bidirectional tool for converting between Arabic numbers (1-3999) and Roman numerals. It provides detailed breakdowns of the conversion process."
+version: 1.2.6
+homepage: https://apiverve.com/marketplace/romanconverter?utm_source=dart&utm_medium=referral&utm_content=homepage
+repository: https://github.com/apiverve/romanconverter-api/tree/main/dart
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
